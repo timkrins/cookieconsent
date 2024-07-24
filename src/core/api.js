@@ -652,8 +652,10 @@ export const run = async (userConfig) => {
 
         setConfig(userConfig);
 
-        if (_state._botAgentDetected)
+        if (_state._botAgentDetected) {
+            debug('CookieConsent [BOT] detected');
             return;
+        }
 
         retrieveState(userConfig);
 

@@ -147,7 +147,7 @@ export const validCookie = (cookieName) => getSingleCookie(cookieName, true) !==
  */
 export const performAutoclearCookies = () => {
     // Pretend it was our first consent, so the autoclear deletes any disabled category cookies
-    autoclearCookiesHelper(true)
+    autoclearCookiesHelper(true);
 };
 
 /**
